@@ -29,7 +29,7 @@ void retirement (int startAge, double initial, retire_info working, retire_info 
   account_balance(retired, startAge, balance);
 }
 
-int  main (){
+void  main (){
   int start_age = 327;
   double start_balance = 21345;
 
