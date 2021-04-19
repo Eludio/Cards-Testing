@@ -29,7 +29,7 @@ void retirement (int startAge, double initial, retire_info working, retire_info 
   account_balance(retired, startAge, balance);
 }
 
-void  main (){
+int  main (){
   int start_age = 327;
   double start_balance = 21345;
 
@@ -44,5 +44,7 @@ void  main (){
   info_retire.rate_of_return = 0.01;
   
   retirement (start_age, start_balance, info_work, info_retire);
+
+  return 0;
 }
 
