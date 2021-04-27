@@ -1,0 +1,25 @@
+aaabb bbaaa
+aabab baaba
+ababa bbbaa
+aaabb bbbaaa
+aaa baaab
+abcde dbcea
+adcsΩ adcs€
+adcΩΩ adcs€
+00000 11111
+11111 55555
+33333 333333
+33333 333323
+aaabb aaabb bbaab
+||||| aaaaa
+(3*2) )11(
+(3*2) (3*3)
+baaba aaa
+aaaaa |||||
+11111 00000
+aaaaa
+aaaa
+abbbb bbbba
+bbabb babbb
+aaaaa aaaab
+baaaa aaaaa
