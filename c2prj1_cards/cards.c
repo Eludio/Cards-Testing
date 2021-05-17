@@ -78,7 +78,7 @@ card_t card_from_num(unsigned c) {
   temp.value = c%13;
   if(temp.value == 1){
     temp.value = 14;
-  
+  }
   temp.suit = c/13;
   return temp;
 }
