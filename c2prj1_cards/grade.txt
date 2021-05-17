@@ -1,6 +1,10 @@
-Grading at Mon May 17 08:22:20 UTC 2021
+Grading at Mon May 17 08:27:30 UTC 2021
 Compiling cards.c
-Testing card_from_letters
-Failed
+cards.c: In function ‘assert_card_valid’:
+cards.c:8:44: error: multi-character character constant [-Werror=multichar]
+   assert(c.value <= '14'  && c.value >= '2');
+                                            ^
+cc1: all warnings being treated as errors
+Could not compile your card.c!
 
 Overall Grade: FAILED
