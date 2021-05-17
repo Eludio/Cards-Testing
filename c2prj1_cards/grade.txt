@@ -1,6 +1,14 @@
-Grading at Mon May 17 09:07:20 UTC 2021
+Grading at Mon May 17 09:27:24 UTC 2021
 Compiling cards.c
-Testing card_from_letters
-Failed
+cards.c: In function ‘card_from_letters’:
+cards.c:77:8: error: ‘value_lets’ undeclared (first use in this function)
+     if(value_lets[i] == value_let){
+        ^
+cards.c:77:8: note: each undeclared identifier is reported only once for each function it appears in
+cards.c:73:22: error: unused variable ‘val_lets’ [-Werror=unused-variable]
+   static const char* val_lets = "234567890JQKA";
+                      ^
+cc1: all warnings being treated as errors
+Could not compile your card.c!
 
 Overall Grade: FAILED
