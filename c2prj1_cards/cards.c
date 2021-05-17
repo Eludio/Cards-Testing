@@ -5,7 +5,6 @@
 
 
 void assert_card_valid(card_t c) {
-  
   assert(c.value <= 14);
   assert(c.value >= 2);
   assert(c.suit >= SPADES);
@@ -69,6 +68,18 @@ void print_card(card_t c) {
 
 card_t card_from_letters(char value_let, char suit_let) {
   card_t temp;
+  for(i=2;i<14;i++){
+    if(value_let == i){
+      temp.value = i;
+      break;
+    }
+  }
+  for(i=0;i<4;i++){
+    if(suit_let == i){
+      temp.suit = i;
+      break;
+    }
+  }
   assert_card_valid(temp);
   return temp;
 }
