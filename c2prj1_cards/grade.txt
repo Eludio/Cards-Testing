@@ -1,10 +1,6 @@
-Grading at Mon May 17 09:05:41 UTC 2021
+Grading at Mon May 17 09:07:20 UTC 2021
 Compiling cards.c
-cards.c: In function ‘card_from_letters’:
-cards.c:71:7: error: ‘i’ undeclared (first use in this function)
-   for(i=2;i<14;i++){
-       ^
-cards.c:71:7: note: each undeclared identifier is reported only once for each function it appears in
-Could not compile your card.c!
+Testing card_from_letters
+Failed
 
 Overall Grade: FAILED
