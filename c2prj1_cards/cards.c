@@ -5,7 +5,7 @@
 
 
 void assert_card_valid(card_t c) {
-  assert(c.value <= 14);
+  assert(c.value <= VALUE_ACE);
   assert(c.value >= 2);
   assert(c.suit >= SPADES);
   assert(c.suit <= CLUBS);
@@ -69,15 +69,19 @@ void print_card(card_t c) {
 card_t card_from_letters(char value_let, char suit_let) {
   card_t temp;
   int i;
+
+  static const char* val_lets = "234567890JQKA";
+  static const char* suit_lets = "shdc";
   
-  for(i=2;i<14;i++){
-    if(value_let == i){
-      temp.value = i;
+  for(i=0;i<13;i++){
+    if(value_lets[i] == value_let){
+      temp.value = i + 2;
       break;
     }
   }
+  
   for(i=0;i<4;i++){
-    if(suit_let == i){
+    if(suit_lets[i] == suit_let){
       temp.suit = i;
       break;
     }
@@ -88,10 +92,7 @@ card_t card_from_letters(char value_let, char suit_let) {
 
 card_t card_from_num(unsigned c) {
   card_t temp;
-  temp.value = c%13;
-  if(temp.value == 1){
-    temp.value = 14;
-  }
+  temp.value = c % 13 + 2;
   temp.suit = c/13;
   return temp;
 }
