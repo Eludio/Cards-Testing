@@ -70,7 +70,7 @@ card_t card_from_letters(char value_let, char suit_let) {
   card_t temp;
   int i;
 
-  static const char* val_lets = "234567890JQKA";
+  static const char* value_lets = "234567890JQKA";
   static const char* suit_lets = "shdc";
   
   for(i=0;i<13;i++){
