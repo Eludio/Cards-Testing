@@ -5,8 +5,11 @@
 
 
 void assert_card_valid(card_t c) {
-  assert(c.value <= '14'  && c.value >= '2');
-  assert(c.suit >= SPADES && c.suit <= CLUBS);
+  
+  assert(c.value <= 14);
+  assert(c.value >= 2);
+  assert(c.suit >= SPADES);
+  assert(c.suit <= CLUBS);
 }
 
 const char * ranking_to_string(hand_ranking_t r) {
@@ -75,7 +78,7 @@ card_t card_from_num(unsigned c) {
   temp.value = c%13;
   if(temp.value == 1){
     temp.value = 14;
-  }
+  
   temp.suit = c/13;
   return temp;
 }
