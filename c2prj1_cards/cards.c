@@ -68,6 +68,8 @@ void print_card(card_t c) {
 
 card_t card_from_letters(char value_let, char suit_let) {
   card_t temp;
+  int i;
+  
   for(i=2;i<14;i++){
     if(value_let == i){
       temp.value = i;
