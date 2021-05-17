@@ -1,6 +1,0 @@
-Grading at Mon May 17 08:39:00 UTC 2021
-Compiling cards.c
-Testing card_from_letters
-Failed
-
-Overall Grade: FAILED
